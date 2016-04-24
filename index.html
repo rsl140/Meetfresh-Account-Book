@@ -14,13 +14,12 @@
   </head>
 
   <body>
-<div class="h10"></div>
+		<div class="h10"></div>
 		<ul class="ml10">
-			<li class="mt10"><label>门店名称：</label><input type="text" id="index_name" name="index_name" class="w100 h12"></li>
-			<li class="mt10"><label>日期：</label><input type="text" id="index_data" name="index_data" class="w100 h12"></li>
+			<li class="mt10"><label>门店名称：</label><input type="text" id="index_name" name="index_name" value="天府店" class="w100 h12"></li>
+			<li class="mt10"><label>日期：</label><input type="text" id="index_data" name="index_data" value="2014年3月4日" class="w100 h12"></li>
 			<li class="mt10"><label>目标：</label><input type="text" id="index_mb" name="index_mb" value="7500" class="w100 h12"></li>
 			<li class="mt10"><label>实际销量：</label><input type="text" id="index_true" name="index_true" value="4510.5" class="w100 h12"></li>
-			<li class="mt10"><label>达标率：</label><input type="text" id="index_db" name="index_db" class="w100 h12"></li>
 		</ul>
 		<button id="button1" class="mt10 ml10" >sumbit</button><br/><br/>
 		<label id="content" class="ml10"></label>
@@ -29,9 +28,9 @@
 			var mb=$("#index_mb").val();
 			var trues=$("#index_true").val();
 			var cy=trues-mb;
-			$("#index_cy").text(cy);
+			var dbl=trues/mb*100
 			
-			$("#content").text("目标:"+mb+"，实际销量:"+trues+",差异:"+cy);
+			$("#content").text($("#index_name").val()+","+$("#index_data").val()+"，目标:"+mb+"，实际销量:"+trues+",差异:"+cy+"达标率:"+dbl.toFixed(2)+"%");
 		})
 			
 			
