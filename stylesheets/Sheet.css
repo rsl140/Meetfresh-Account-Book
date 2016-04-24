@@ -1,0 +1,46 @@
+body {font-size:12px;color:black; background-color:#e4e4e4;
+}
+a { color:black; }
+a:link { text-decoration:none;}
+a:hover { text-decoration:underline; }
+
+.ml150{margin-left:150px;}
+
+.color1{color:#a2a2a2;}
+.color2{color:#777777;}
+.color3{color:#9d1217;}
+.color4{color:#ffffff;}
+
+.border1,.border2,.border3{border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;}
+.border1{width:277px;}
+.border2{width:698px;border-top:1px solid #e4e4e4;min-height:550px;}
+.border3{width:976px;border-top:1px solid #e4e4e4;}
+
+.back1{background-image:url(/images/index_gg.gif);background-repeat:no-repeat;height:27px;line-height:27px;}
+.back2{background-image:url(/images/index_lc.gif);background-repeat:no-repeat;height:50px;line-height:70px; padding-left:20px;width:279px;}
+.back3{background-image:url(/images/index_zf.gif);background-repeat:no-repeat;height:22px;padding-top:28px;}
+.back3.span{height:50px;}
+.back4{background-image:url(/images/index_al.gif);background-repeat:no-repeat;height:22px;padding-top:28px;width:978px;}
+
+
+/*内容*/
+#leftbar{width:279px; background-color:white;}
+#main,#content2{background-color:white;}
+#main{min-height:600px;}
+#main dl{margin-left:3px;}
+#main dt{background-color:#000000; height:30px; line-height:30px;}
+#main dd{background-color:#f4f4f4; height:30px; margin-bottom:3px; line-height:30px;}
+
+
+
+/*页眉*/
+#header { background-image:url(/images/top_bg.gif);}
+#logo {background-image:url(/images/logo.gif);height:113px;}
+#logo ul{padding-left:280px;padding-top:20px;}
+#logo li{float:left;display:inline;margin-left:20px;font-size:14px;font-weight:bold;}
+#logo a{color:white;}
+#logo a:hover{ text-decoration:none;}
+#banner{height:324px;}
+
+/*页尾*/
+#footer {background-image:url(/images/index_bottombg.gif); height:175px;}
