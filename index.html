@@ -68,12 +68,26 @@
 					<li class="mt10"><label id="o_7">活动折扣小计：</label><input type="text" id="index_o_7" name="index_o_7" value="0单0元" class="w100 h12"></li>
 					<li class="mt10"><label id="o_8">福袋：</label><input type="text" id="index_o_8" name="index_o_8" value="0个" class="w100 h12"></li>
 					<li class="mt10"><label id="o_9">赠送1：</label><input type="text" id="index_o_9" name="index_o_9" value="0单0元" class="w100 h12"></li>
-					<li class="mt10"><label id="o_10">福袋卷：</label><input type="text" id="index_o_10" name="index_o_10" value="0" class="w100 h12"></li>
+					</ul>
+			</div>
+			
+			<div class="fl w250">
+				<ul class="ml10">
+					<li class="mt10"><label id="o_10">特殊操作：</label><input type="text" id="index_o_10" name="index_o_10" value="0" class="w100 h12"></li>
+					<li class="mt10"><label id="o_11">OVERRING：</label><input type="text" id="index_o_11" name="index_o_11" value="0单0元" class="w100 h12"></li>
+					<li class="mt10"><label id="o_12">删除存储账单：</label><input type="text" id="index_o_12" name="index_o_12" value="0单0元" class="w100 h12"></li>
+					<li class="mt10"><label id="o_13">打开钱箱：</label><input type="text" id="index_o_13" name="index_o_13" value="0次" class="w100 h12"></li>
+					<li class="mt10"><label id="o_14">取消交易：</label><input type="text" id="index_o_14" name="index_o_14" value="0单0元" class="w100 h12"></li>
 				</ul>
 			</div>
 			<div class="cb"></div>
 		<div class="w500 ml11">
-		<button id="button1" class="mt10 ml10" >sumbit</button><br/><br/>
+		<ul class="mt10 ml10 mb10">
+			<li><button id="button1" class="mt10 ml10 fl" >每日总结</button></li>
+			<li><button id="button2" class="mt10 ml10 fl" >未完成总结</button></li>
+			<li><button id="button3" class="mt10 ml10 fl" >完成总结</button></li>
+			<li class="cb"></li>
+		</ul>
 		<label id="content" class="ml10"></label>
 		</div>
 		<script>
@@ -83,7 +97,7 @@
 			/*实际销量*/
 			var trues=$("#index_true").val();
 			/*差异*/
-			var cy=(trues-mb).toFixed(2);
+			var cy=trues-mb;
 			
 			/*堂吃*/
 			var tc=$("#index_tc").val();
@@ -140,6 +154,10 @@
 			","+$("#o_8").text()+$("#index_o_8").val()+
 			","+$("#o_9").text()+$("#index_o_9").val()+
 			","+$("#o_10").text()+$("#index_o_10").val()+
+			","+$("#o_11").text()+$("#index_o_11").val()+
+			","+$("#o_12").text()+$("#index_o_12").val()+
+			","+$("#o_13").text()+$("#index_o_13").val()+
+			","+$("#o_14").text()+$("#index_o_14").val()+
 			","+$("#tq").text()+":"+$("#index_tq").val();
 			
 			var header=$("#index_name").val()+","+$("#index_data").val()+",目标:"+mb+
@@ -147,8 +165,14 @@
 			
 			$("#content").text(header);
 		})
+		
+		function footer2(){
 			
-			
+		}
+		$("#button2").click(function(){
+			var header="工作总结"
+			$("#content").text(header);
+		})
 		</script>
 	</body>
 </html>
