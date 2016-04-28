@@ -74,9 +74,6 @@
 			$("#content").text(header);
 		})
 		
-		function footer2(){
-			
-		}
 		$("#button2").click(function(){
 			
 			$("#content").empty();
@@ -125,3 +122,57 @@
 			"<li>"+"值班人："+$("#index_zbr").val()+"</li>";
 			$("#test").append(line1);
 		})
+		
+$("#button3").click(function(){
+	$("#content").empty();
+	$("#test").empty();
+	/*目标*/
+			var mb=$("#index_mb").val();
+			/*实际销量*/
+			var trues=$("#index_true").val();
+			/*完成比例*/
+			var wcbl=Math.floor((trues/mb*100) * 100) / 100+"%";
+			/*月完成比例*/
+			var ywcbl=Math.floor(($("#index_ljyye").val()/$("#index_ygyye").val()*100) * 100) / 100+"%";
+			/*CPH*/
+			var cph=($("#index_lks").val()/$("#index_scl").val()).toFixed(2);
+			/*外送*/
+			var ws=$("#index_ws").val();
+			/*外送占比*/
+			var wszb=Math.floor((ws/trues*100) * 100) / 100+"%";
+			
+			var line1="<li>"+"工作总结:"+"</li>"+
+			"<li>"+"店面:"+$("#index_name").val()+"</li>"+
+			"<li>"+"日期："+$("#index_data").val()+"</li>"+
+			"<li>"+"星期：星期"+$("#index_xq").val()+"</li>"+
+			"<li>"+"天气："+$("#index_tq").val()+"</li>"+
+			"<li>"+"预估营业额："+$("#index_mb").val()+"</li>"+
+			"<li>"+"实际完成："+$("#index_true").val()+"</li>"+
+			"<li>"+"完成比例："+wcbl+"</li>"+
+			"<li>"+"同比上周："+$("#index_tbsz1").val()+"</li>"+
+			"<li>"+"本周目标："+$("#index_bzmb").val()+"</li>"+
+			"<li>"+"本周实际："+$("#index_bzsj").val()+"</li>"+
+			"<li>"+"累计营业额："+$("#index_ljyye").val()+"</li>"+
+			"<li>"+"月完成比例："+ywcbl+"</li>"+
+			"<li>"+"客单数："+$("#index_kds").val()+"</li>"+
+			"<li>"+"同比上周："+$("#index_tbsz2").val()+"</li>"+
+			"<li>"+"客单价："+$("#index_kdj").val()+"</li>"+
+			"<li>"+"CPH值："+cph+"</li>"+
+			"<li>"+"美团外送："+$("#index_mtws").val()+"</li>"+
+			"<li>"+"百度外送："+$("#index_bdws").val()+"</li>"+
+			"<li>"+"饿了么外送："+$("#index_elmws").val()+"</li>"+
+			"<li>"+"外送总金额："+$("#index_ws").val()+"</li>"+
+			"<li>"+"外送占比："+wszb+"</li>"+
+			"<li>"+"福袋售卖："+$("#index_o_8").val()+"</li>"+
+			"<li>"+"福袋第一阶段目标："+$("#index_fd_1").val()+"</li>"+
+			"<li>"+"福袋第二阶段目标："+$("#index_fd_2").val()+"</li>"+
+			"<li>"+"福袋第二阶段售卖："+$("#index_fd_1m").val()+"</li>"+
+			"<li>"+"小料数量："+$("#index_xlsl").val()+"</li>"+
+			"<li>"+"小料金额："+$("#index_xlje").val()+"</li>"+
+			"<li>"+"新品份数："+$("#index_xpfs").val()+"</li>"+
+			"<li>"+"海苔酥："+$("#index_hts").val()+"</li>"+
+			"<li>"+"小时客单最低时段："+$("#index_xszd").val()+"</li>"+
+			"<li>"+"今日完成预估目标："+$("#index_wcmb").val()+"</li>"+
+			"<li>"+"值班人："+$("#index_zbr").val()+"</li>";
+			$("#test").append(line1);
+})
