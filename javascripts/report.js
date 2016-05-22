@@ -46,11 +46,11 @@
             	+","+$("#ggj").text()+$("#index_ggj").val()+","+$("#ydjf").text()+$("#index_ydjf").val()
             	+","+$("#chjf").text()+$("#index_chjf").val();
             
-            var footer=","+$("#tc").text()+$("#index_tc").val()+","+$("#tc").text()+"占比："+tczb+
-            ","+$("#wd").text()+$("#index_wd").val()+","+$("#wd").text()+"占比："+wdzb+
-            ","+$("#ws").text()+$("#index_ws").val()+","+$("#ws").text()+"占比："+wszb+
-            ","+$("#zq").text()+$("#index_zq").val()+","+$("#zq").text()+"占比："+zqzb
-            +","+$("#bs").text()+":"+$("#index_bs").val()+",杯单价:"+bdj+",来客数："+$("#index_lks").val()+",客单价："+$("#index_kdj").val();
+            var footer=","+$("#tc").text()+":"+$("#index_tc").val()+","+$("#tc").text()+"占比："+tczb+
+            ","+$("#wd").text()+"："+$("#index_wd").val()+","+$("#wd").text()+"占比："+wdzb+
+            ","+$("#ws").text()+"："+$("#index_ws").val()+","+$("#ws").text()+"占比："+wszb+
+            ","+$("#zq").text()+"："+$("#index_zq").val()+","+$("#zq").text()+"占比："+zqzb
+            +","+$("#bs").text()+"："+$("#index_bs").val()+",杯单价:"+bdj+",来客数："+$("#index_lks").val()+",客单价："+$("#index_kdj").val();
 			
 			var footer2=","+$("#o_1").text()+$("#index_o_1").val()+
 			","+$("#o_2").text()+$("#index_o_2").val()+
@@ -59,7 +59,7 @@
 			","+$("#o_5").text()+$("#index_o_5").val()+
 			","+$("#o_6").text()+$("#index_o_6").val()+
 			","+$("#o_7").text()+$("#index_o_7").val()+",生产力:"+scl+
-			","+$("#o_8").text()+$("#index_o_8").val()+
+			//","+$("#o_8").text()+$("#index_o_8").val()+
 			","+$("#o_9").text()+$("#index_o_9").val()+
 			","+$("#o_10").text()+$("#index_o_10").val()+
 			","+$("#o_11").text()+$("#index_o_11").val()+
@@ -109,10 +109,10 @@
 			"<li>"+"百度外送："+$("#index_bdws").val()+"</li>"+
 			"<li>"+"饿了么外送："+$("#index_elmws").val()+"</li>"+
 			"<li>"+"外送总金额："+$("#index_ws").val()+"</li>"+
-			"<li>"+"外送占比："+wszb+"</li>"+
-			"<li>"+"福袋售卖："+$("#index_o_8").val()+"</li>"+
-			"<li>"+"福袋第一阶段目标："+$("#index_fd_1").val()+"</li>"+
-			"<li>"+"福袋第二阶段售卖："+$("#index_fd_1m").val()+"</li>"+
+			//"<li>"+"外送占比："+wszb+"</li>"+
+			//"<li>"+"福袋售卖："+$("#index_o_8").val()+"</li>"+
+			//"<li>"+"福袋第一阶段目标："+$("#index_fd_1").val()+"</li>"+
+			//"<li>"+"福袋第二阶段售卖："+$("#index_fd_1m").val()+"</li>"+
 			"<li>"+"微信支付："+$("#index_wxzf").val()+"</li>"+
 			"<li>"+"小料数量："+$("#index_xlsl").val()+"</li>"+
 			"<li>"+"小料金额："+$("#index_xlje").val()+"</li>"+
@@ -162,11 +162,12 @@ $("#button3").click(function(){
 			"<li>"+"百度外送："+$("#index_bdws").val()+"</li>"+
 			"<li>"+"饿了么外送："+$("#index_elmws").val()+"</li>"+
 			"<li>"+"外送总金额："+$("#index_ws").val()+"</li>"+
-			"<li>"+"外送占比："+wszb+"</li>"+
-			"<li>"+"福袋售卖："+$("#index_o_8").val()+"</li>"+
-			"<li>"+"福袋第一阶段目标："+$("#index_fd_1").val()+"</li>"+
-			"<li>"+"福袋第二阶段目标："+$("#index_fd_2").val()+"</li>"+
-			"<li>"+"福袋第二阶段售卖："+$("#index_fd_1m").val()+"</li>"+
+			//"<li>"+"外送占比："+wszb+"</li>"+
+			//"<li>"+"福袋售卖："+$("#index_o_8").val()+"</li>"+
+			//"<li>"+"福袋第一阶段目标："+$("#index_fd_1").val()+"</li>"+
+			//"<li>"+"福袋第二阶段目标："+$("#index_fd_2").val()+"</li>"+
+			//"<li>"+"福袋第二阶段售卖："+$("#index_fd_1m").val()+"</li>"+
+			"<li>"+"微信支付："+$("#index_wxzf").val()+"</li>"+
 			"<li>"+"小料数量："+$("#index_xlsl").val()+"</li>"+
 			"<li>"+"小料金额："+$("#index_xlje").val()+"</li>"+
 			"<li>"+"新品份数："+$("#index_xpfs").val()+"</li>"+
