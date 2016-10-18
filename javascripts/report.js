@@ -1,4 +1,13 @@
 $(document).ready(function(){
+			// 清空现有数据
+		function emptyall(){
+			$("#content").empty();
+			$("#test").empty();
+		}
+
+		$("#button1").click(function(){		
+			$("#test").empty();	
+
 			/*目标*/
 			var mb=$("#index_mb").val();
 			/*实际销量*/
@@ -29,22 +38,6 @@ $(document).ready(function(){
 			/*达标率*/
 			var dbl=Math.floor((trues/mb*100) * 100) / 100+"%";
 			
-			/*杯单价*/
-			var bs=$("#index_bs").val();
-			var bsje=$("#index_bsje").val();
-			var bdj=Math.floor((bsje/bs*100)) / 100;
-			
-			/*生产力*/
-			var scl1=$("#index_true").val()/$("#index_scl").val();
-			var scl=scl1.toFixed(2);
-			// 清空现有数据
-			function emptyall(){
-				$("#content").empty();
-				$("#test").empty();
-			}
-
-		$("#button1").click(function(){		
-			$("#test").empty();	
 			/*杯单价*/
 			var bs=$("#index_bs").val();
 			var bsje=$("#index_bsje").val();
@@ -92,6 +85,18 @@ $(document).ready(function(){
 		$("#button2").click(function(){
 			
 			emptyall();
+			/*目标*/
+			var mb=$("#index_mb").val();
+			/*实际销量*/
+			var trues=$("#index_true").val();
+			var wcbl=Math.floor((trues/mb*100) * 100) / 100+"%";
+			var ywcbl=Math.floor(($("#index_ljyye").val()/$("#index_ygyye").val()*100) * 100) / 100+"%";
+			var cph=($("#index_lks").val()/$("#index_scl").val()).toFixed(2);
+			/*外送*/
+			var ws=$("#index_ws").val();
+			/*外送占比*/
+			var wszb=Math.floor((ws/trues*100) * 100) / 100+"%";
+
 			var wcbl=Math.floor((trues/mb*100) * 100) / 100+"%";
 			var ywcbl=Math.floor(($("#index_ljyye").val()/$("#index_ygyye").val()*100) * 100) / 100+"%";
 			var cph=($("#index_lks").val()/$("#index_scl").val()).toFixed(2);
@@ -131,12 +136,20 @@ $(document).ready(function(){
 		
 	$("#button3").click(function(){
 		emptyall();
+			/*目标*/
+			var mb=$("#index_mb").val();
+			/*实际销量*/
+			var trues=$("#index_true").val();
 			/*完成比例*/
 			var wcbl=Math.floor((trues/mb*100) * 100) / 100+"%";
 			/*月完成比例*/
 			var ywcbl=Math.floor(($("#index_ljyye").val()/$("#index_ygyye").val()*100) * 100) / 100+"%";
 			/*CPH*/
 			var cph=($("#index_lks").val()/$("#index_scl").val()).toFixed(2);
+			/*外送*/
+			var ws=$("#index_ws").val();
+			/*外送占比*/
+			var wszb=Math.floor((ws/trues*100) * 100) / 100+"%";
 			
 			var line1="<li>"+"工作总结:"+"</li>"+
 			"<li>"+"店面:"+$("#index_name").val()+"</li>"+
@@ -176,6 +189,36 @@ $(document).ready(function(){
 		})
 	$("#zywd").click(function(){
 		emptyall();
+			/*目标*/
+			var mb=$("#index_mb").val();
+			/*实际销量*/
+			var trues=$("#index_true").val();
+			/*差异*/
+			var cy=(trues-mb).toFixed(2);
+			
+			/*堂吃*/
+			var tc=$("#index_tc").val();
+			/*堂吃占比*/
+			var tczb=Math.floor((tc/trues*100) * 100) / 100+"%";
+			
+			/*外带*/
+			var wd=$("#index_wd").val();
+			/*外带占比*/
+			var wdzb=Math.floor((wd/trues*100) * 100) / 100+"%";
+			
+			/*外送*/
+			var ws=$("#index_ws").val();
+			/*外送占比*/
+			var wszb=Math.floor((ws/trues*100) * 100) / 100+"%";
+			
+			/*自取*/
+			var zq=$("#index_zq").val();
+			/*自取占比*/
+			var zqzb=Math.floor((zq/trues*100) * 100) / 100+"%";
+			
+			/*达标率*/
+			var dbl=Math.floor((trues/mb*100) * 100) / 100+"%";
+			
 			/*杯单价*/
 			var bs=$("#index_bs").val();
 			var bsje=$("#index_bsje").val();
