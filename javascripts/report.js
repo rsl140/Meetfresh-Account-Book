@@ -234,6 +234,7 @@ $(document).ready(function(){
 			"<li>"+"实际销量："+$("#index_true").val()+"</li>"+
 			"<li>"+"现金："+$("#index_xj").val()+"</li>"+
 			"<li>"+"美团外卖线上支付："+$("#index_mtxs").val()+"</li>"+
+                        "<li>"+"百度外卖线上支付："+$("#index_bdxs").val()+"</li>"+
 			"<li>"+"堂吃："+tc+"</li>"+
 			"<li>"+"堂吃占比："+tczb+"</li>"+
 			"<li>"+"外带："+wd+"</li>"+
