@@ -218,6 +218,9 @@ $(document).ready(function(){
 			
 			/*达标率*/
 			var dbl=Math.floor((trues/mb*100) * 100) / 100+"%";
+
+			/*目标达成*/
+			var mbz=trues-mb;
 			
 			/*杯单价*/
 			var bs=$("#index_bs").val();
@@ -235,6 +238,7 @@ $(document).ready(function(){
 			"<li>"+"现金："+$("#index_xj").val()+"</li>"+
 			"<li>"+"美团外卖线上支付："+$("#index_mtxs").val()+"</li>"+
                         "<li>"+"百度外卖线上支付："+$("#index_bdxs").val()+"</li>"+
+                        "<li>"+"饿了么外卖线上支付："+$("#index_elmxs").val()+"</li>"+
 			"<li>"+"堂吃："+tc+"</li>"+
 			"<li>"+"堂吃占比："+tczb+"</li>"+
 			"<li>"+"外带："+wd+"</li>"+
@@ -248,7 +252,8 @@ $(document).ready(function(){
 			"<li>"+"现金折扣小计："+$("#index_xjzkxj").val()+"</li>"+
 			"<li>"+"小料："+$("#index_xlje").val()+"</li>"+
 			"<li>"+"天气："+$("#index_tq").val()+"</li>"+
-			"<li>"+"生产力："+scl+"</li>";
+			"<li>"+"生产力："+scl+"</li>"+
+			"<li>"+"目标："+$("#index_mb").val()+"&nbsp&nbsp&nbsp"+mbz+"</li>";
 			
 			$("#test").append(line1);
 	})
