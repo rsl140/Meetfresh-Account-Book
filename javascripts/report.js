@@ -220,7 +220,7 @@ $(document).ready(function(){
 			var dbl=Math.floor((trues/mb*100) * 100) / 100+"%";
 
 			/*目标达成*/
-			var mbz=trues-mb;
+			var mbz=(trues-mb).toFixed(2);
 			
 			/*杯单价*/
 			var bs=$("#index_bs").val();
