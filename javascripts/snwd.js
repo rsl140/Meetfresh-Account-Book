@@ -31,7 +31,7 @@ $(document).ready(function () {
             xingqi = "星期六";
             break;
     }
-    $("#zywd").click(function () {
+    $("#snwd").click(function () {
         emptyall();
         /*目标*/
         var mb = $("#index_mb").val();
@@ -85,8 +85,8 @@ $(document).ready(function () {
             "<li>" + "支付宝：" + $("#index_zfb").val() + "</li>" +
             "<li>" + "银行卡：" + $("#index_yhk").val() + "</li>" +
             "<li>" + "美团外卖线上支付：" + $("#index_mtxs").val() + "</li>" +
-            "<li>" + "百度外卖线上支付：" + $("#index_bdxs").val() + "</li>" +
-            "<li>" + "饿了么外卖线上支付：" + $("#index_elmxs").val() + "</li>" +
+            // "<li>" + "百度外卖线上支付：" + $("#index_bdxs").val() + "</li>" +
+            // "<li>" + "饿了么外卖线上支付：" + $("#index_elmxs").val() + "</li>" +
             "<li>" + "堂吃：" + tc + "</li>" +
             "<li>" + "堂吃占比：" + tczb + "</li>" +
             "<li>" + "外带：" + wd + "</li>" +
@@ -103,6 +103,6 @@ $(document).ready(function () {
             "<li>" + "生产力：" + scl + "</li>";
             // "<li>" + "目标：" + $("#index_mb").val() + "&nbsp&nbsp&nbsp" + mbz + "</li>";
 
-        $("#test").append(line1);
+            $("#test").append(line1);
     })
 })
