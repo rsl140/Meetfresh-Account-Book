@@ -80,7 +80,7 @@ $(document).ready(function () {
             "<li>" + "日期：" + DataNow.toLocaleDateString() + "</li>" +
             "<li>" + xingqi + "</li>" +
             "<li>" + "实际销量：" + $("#index_true").val() + "</li>" +
-            "<li>" + "现金：" + $("#index_xj").val() + "</li>" +
+            "<li>" + "钱箱现金：" + $("#index_xj").val() + "</li>" +
             "<li>" + "微信支付：" + $("#index_wx").val() + "</li>" +
             "<li>" + "支付宝：" + $("#index_zfb").val() + "</li>" +
             "<li>" + "银行卡：" + $("#index_yhk").val() + "</li>" +
@@ -101,7 +101,7 @@ $(document).ready(function () {
             "<li>" + "小料：" + $("#index_xlje").val() + "</li>" +
             "<li>" + "天气：" + $("#index_tq").val() + "</li>" +
             "<li>" + "生产力：" + scl + "</li>" +
-            "<li>" + "目标：" + $("#index_mb").val() + "&nbsp&nbsp&nbsp" + mbz + "</li>";
+            // "<li>" + "目标：" + $("#index_mb").val() + "&nbsp&nbsp&nbsp" + mbz + "</li>";
 
         $("#test").append(line1);
     })
