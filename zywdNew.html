@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Xiaosi : ">
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/Base-3.0.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/Sheet.css">
+
+    <title>zywd</title>
+</head>
+
+<body>
+    <!--
+        作者：xiaosi
+        时间：2017-11-14
+        描述：资阳
+    -->
+    <div class="h10"></div>
+    <div class="w220 fl">
+        <ul class="ml10">
+            <li class="mt10">
+                <label>门店名称：</label>
+                <input type="text" id="index_name" name="index_name" value="资阳万达鲜芋仙" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>实际销量：</label>
+                <input type="text" id="index_true" name="index_true" value="4000" class="w100 h12">
+            </li>
+            <!-- <li class="mt10">
+                <label>目标：</label>
+                <input type="text" id="index_mb" name="index_mb" value="4000" class="w100 h12">
+            </li> -->
+            <li class="mt10">
+                <label>钱箱现金：</label>
+                <input type="text" id="index_xj" name="index_xj" value="3000" class="w100 h12">
+            </li>
+
+            <li class="mt10">
+                <label>微信支付：</label>
+                <input type="text" id="index_wx" name="index_wx" value="0" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>支付宝：</label>
+                <input type="text" id="index_zfb" name="index_zfb" value="0" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>银行卡：</label>
+                <input type="text" id="index_yhk" name="index_yhk" value="0" class="w100 h12">
+            </li>
+
+            <li class="mt10">
+                <label>美团外卖线上支付：</label>
+                <input type="text" id="index_mtxs" name="index_mtxs" value="0单0元" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>百度外卖线上支付：</label>
+                <input type="text" id="index_bdxs" name="index_bdxs" value="0单0元" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>饿了么外卖线上支付：</label>
+                <input type="text" id="index_elmxs" name="index_elmxs" value="0单0元" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label id="tc">堂吃：</label>
+                <input type="text" id="index_tc" name="index_tc" value="3440" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label id="wd">外带：</label>
+                <input type="text" id="index_wd" name="index_wd" value="764" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label id="ws">外送：</label>
+                <input type="text" id="index_ws" name="index_ws" value="306.5" class="w100 h12">
+            </li>
+            <!-- <li class="mt10"><label id="zq">自取</label><input type="text" id="index_zq" name="index_zq" value="0" class="w100 h12"></li> -->
+            <li class="mt10">
+                <label id="bs">杯数：</label>
+                <input type="text" id="index_bs" name="index_bs" value="10" class="w100 h12">
+            </li>
+            <!-- <li class="mt10">
+                <label id="bsje">杯数金额：</label>
+                <input type="text" id="index_bsje" name="index_bsje" value="100" class="w100 h12">
+            </li> -->
+            <li class="mt10">
+                <label id="lks">来客数：</label>
+                <input type="text" id="index_lks" name="index_lks" value="90" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label id="kdj">客单价：</label>
+                <input type="text" id="index_kdj" name="index_kdj" value="33" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>现金折扣小计：</label>
+                <input type="text" id="index_xjzkxj" name="index_xjzkxj" value="0单-10元" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label>小料：</label>
+                <input type="text" id="index_xlje" name="index_xlje" value="0" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label id="scl">生产力工时：</label>
+                <input type="text" id="index_scl" name="index_scl" value="45" class="w100 h12">
+            </li>
+            <li class="mt10">
+                <label id="tq">天气：</label>
+                <input type="text" id="index_tq" name="index_tq" value="阴" class="w100 h12">
+            </li>
+        </ul>
+    </div>
+    <div class="cb"></div>
+    <div class="w500 ml11">
+        <ul class="mt10 ml10 mb10">
+            <li>
+                <button id="zywd" class="mt10 ml10 fl">总结</button>
+            </li>
+            <li class="cb"></li>
+        </ul>
+        <label id="content" class="ml10"></label>
+        <div class="ml30">
+            <ul id="test">
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascripts/zywd.js"></script>
+
+</body>
+
+</html>
