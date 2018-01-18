@@ -75,16 +75,22 @@ $(document).ready(function () {
         var scl1 = $("#index_true").val() / $("#index_scl").val();
         var scl = scl1.toFixed(2);
 
+        /*总金额*/
+        var zje = 0;
+        zje = Number($("#index_xj").val()) + Number($("#index_wx").val()) + Number($("#index_zfb").val()) + Number($("#index_yhk").val()) + Number($("#index_mtxsy").val()) + Number($("#index_mttgy").val())
+
         var line1 =
             "<li>" + "店面:" + $("#index_name").val() + "</li>" +
             "<li>" + "日期：" + DataNow.toLocaleDateString() + "</li>" +
             "<li>" + xingqi + "</li>" +
             "<li>" + "实际销量：" + $("#index_true").val() + "</li>" +
+            "<li>" + "现金总和：" + zje +"元</li>" +
             "<li>" + "钱箱现金：" + $("#index_xj").val() + "</li>" +
             "<li>" + "微信支付：" + $("#index_wx").val() + "</li>" +
             "<li>" + "支付宝：" + $("#index_zfb").val() + "</li>" +
             "<li>" + "银行卡：" + $("#index_yhk").val() + "</li>" +
-            "<li>" + "美团外卖线上支付：" + $("#index_mtxs").val() + "</li>" +
+            "<li>" + "美团外卖线上支付：" + $("#index_mtxsd").val() +"单" + $("#index_mtxsy").val() +"元</li>" +
+            "<li>" + "美团团购：" + $("#index_mttgd").val() +"单" + $("#index_mttgy").val() +"元</li>" +
             // "<li>" + "百度外卖线上支付：" + $("#index_bdxs").val() + "</li>" +
             // "<li>" + "饿了么外卖线上支付：" + $("#index_elmxs").val() + "</li>" +
             "<li>" + "堂吃：" + tc + "</li>" +
