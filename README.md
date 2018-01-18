@@ -1,2 +1,3 @@
-# xiaosi
-帮朋友做的简易算账列表
+# Meetfresh-Account-Book
+
+简化Meetfresh记账(不定期更新中……)
