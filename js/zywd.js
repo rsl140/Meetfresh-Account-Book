@@ -10,10 +10,6 @@ var app = new Vue({
         yhk: '1',
         mtwmxsd: '1',
         mtwmxsy: '1',
-        bdwmxsd: '1',
-        bdwmxsy: '1',
-        elmwmxsd: '1',
-        elmwmxsy: '1',
         tc: '3440',
         wd: '764',
         ws: '306.5',
@@ -81,7 +77,7 @@ var app = new Vue({
             this.scl = (this.sjxl / this.gs).toFixed(2);
 
             /*总金额*/
-            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy) + Number(this.bdwmxsy) + Number(this.elmwmxsy) + Number(this.xjzkxjy)
+            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy)+ Number(this.xjzkxjy)
 
             /*复制到剪切板*/
             this.textarea = "店面：" + this.name + "\n"
@@ -93,8 +89,6 @@ var app = new Vue({
                 + "支付宝：" + this.zfb + "\n"
                 + "银行卡：" + this.yhk + "\n"
                 + "美团外卖线上支付：" + this.mtwmxsd + "单" + this.mtwmxsy + "元" + "\n"
-                + "百度外卖线上支付：" + this.bdwmxsd + "单" + this.bdwmxsy + "元" + "\n"
-                + "饿了么外卖线上支付：" + this.elmwmxsd + "单" + this.elmwmxsy + "元" + "\n"
                 + "堂吃：" + this.tc + "\n"
                 + "堂吃占比：" + this.tczb + "\n"
                 + "外带：" + this.wd + "\n"
