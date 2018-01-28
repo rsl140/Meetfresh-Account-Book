@@ -77,7 +77,7 @@ var app = new Vue({
             this.scl = (this.sjxl / this.gs).toFixed(2);
 
             /*总金额*/
-            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy)+ Number(this.xjzkxjy)
+            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy)
 
             /*复制到剪切板*/
             this.textarea = "店面：" + this.name + "\n"
