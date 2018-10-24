@@ -10,6 +10,8 @@ var app = new Vue({
         yhk: '1',
         mtwmxsd: '1',
         mtwmxsy: '1',
+        elmwmxsd: '1',
+        elmwmxsy: '1',
         mttgd: '1',
         mttgy: '1',
         tc: '3440',
@@ -79,7 +81,7 @@ var app = new Vue({
             this.scl = (this.sjxl / this.gs).toFixed(2);
 
             /*总金额*/
-            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy) + Number(this.mttgy)
+            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy)+ Number(this.elmwmxsy) + Number(this.mttgy)
 
             /*复制到剪切板*/
             this.textarea = "店面：" + this.name + "\n"
@@ -91,6 +93,7 @@ var app = new Vue({
                 + "支付宝：" + this.zfb + "\n"
                 + "银行卡：" + this.yhk + "\n"
                 + "美团外卖线上支付：" + this.mtwmxsd + "单" + this.mtwmxsy + "元" + "\n"
+                + "饿了么外卖线上支付：" + this.elmwmxsd + "单" + this.elmwmxsy + "元" + "\n"
                 + "美团团购：" + this.mttgd + "单" + this.mttgy + "元" + "\n"
                 + "堂吃：" + this.tc + "\n"
                 + "堂吃占比：" + this.tczb + "\n"

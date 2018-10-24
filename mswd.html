@@ -71,6 +71,18 @@
 					</el-col>
 
 					<el-col :span="24">
+						<el-input placeholder="0" v-model="elmwmxsd" clearable>
+							<template slot="prepend">饿了么外卖线上支付</template>
+							<template slot="append">单</template>
+						</el-input>
+					</el-col>
+					<el-col :span="24">
+						<el-input placeholder="0" v-model="elmwmxsy" clearable>
+							<template slot="append">元</template>
+						</el-input>
+					</el-col>
+
+					<el-col :span="24">
 						<el-input placeholder="0" v-model="mttgd" clearable>
 							<template slot="prepend">美团团购</template>
 							<template slot="append">单</template>
@@ -170,6 +182,7 @@
 						<li>支付宝：{{zfb}}</li>
 						<li>银行卡：{{yhk}}</li>
 						<li>美团外卖线上支付：{{mtwmxsd}}单{{mtwmxsy}}元</li>
+						<li>饿了么外卖线上支付：{{elmwmxsd}}单{{elmwmxsy}}元</li>
 						<li>美团团购：{{mttgd}}单{{mttgy}}元</li>
 						<li>堂吃：{{tc}}</li>
 						<li>堂吃占比：{{tczb}}</li>
