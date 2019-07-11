@@ -2,7 +2,7 @@ var DataNow = new Date();
 var app = new Vue({
     el: '#app',
     data: {
-        name: '眉山万达鲜芋仙',
+        name: '',
         sjxl: '4000',
         qxxj: '3000',
         wxzf: '1',
