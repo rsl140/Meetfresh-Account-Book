@@ -34,6 +34,7 @@ var app = new Vue({
         scl: '',
         zje: '',
         textarea: '',
+        newMember: '0',
         texttishi: '点我复制哦！！！',
         show: false
     },
@@ -109,6 +110,7 @@ var app = new Vue({
                 + "小料：" + this.xl + "\n"
                 + "天气：" + this.tq + "\n"
                 + "生产力：" + this.scl + "\n"
+                + "新增会员数：" + this.newMember + "\n"
 
             this.show = true
 

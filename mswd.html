@@ -158,6 +158,12 @@
 						<el-input placeholder="晴" v-model="tq" clearable>
 							<template slot="prepend">天气</template>
 						</el-input>
+          </el-col>
+
+          <el-col :span="24">
+						<el-input placeholder="0" v-model="newMember" clearable>
+							<template slot="prepend">新增会员数</template>
+						</el-input>
 					</el-col>
 				</el-row>
 
@@ -197,7 +203,8 @@
 						<li>现金折扣小计：{{xjzkxjd}}单{{xjzkxjy}}元</li>
 						<li>小料：{{xl}}</li>
 						<li>天气：{{tq}}</li>
-						<li>生产力：{{scl}}</li>
+            <li>生产力：{{scl}}</li>
+            <li>新增会员数：{{newMember}}</li>
 					</ul>
 				</transition>
 
