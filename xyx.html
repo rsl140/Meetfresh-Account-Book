@@ -174,11 +174,11 @@
             </el-input>
           </el-col>
 
-          <!-- <el-col :span="24">
-            <el-input placeholder="0" v-model="newMember" clearable>
-              <template slot="prepend">新增会员数</template>
+          <el-col :span="24">
+            <el-input placeholder="0" v-model="otherActived" clearable>
+              <template slot="prepend">异业活动</template>
             </el-input>
-          </el-col> -->
+          </el-col>
         </el-row>
 
         <el-input v-show="false" type="textarea" :rows="2" placeholder="请输入内容" v-model="textarea"></el-input>
@@ -218,7 +218,7 @@
             <li>小料：{{xl}}</li>
             <li>天气：{{tq}}</li>
             <li>生产力：{{scl}}</li>
-            <!-- <li>新增会员数：{{newMember}}</li> -->
+            <li>异业活动：{{otherActived}}</li>
           </ul>
         </transition>
 
