@@ -14,6 +14,8 @@ var app = new Vue({
         elmwmxsy: '1',
         mttgd: '1',
         mttgy: '1',
+        otherActivedd: '1',
+        otherActivedy: '1',
         tc: '3440',
         wd: '764',
         ws: '306.5',
@@ -52,6 +54,7 @@ var app = new Vue({
           label: '遂宁万达鲜芋仙'
         }],
         useElement: false,
+        otherActived: false,
         useMtTuanGou: false
     },
     methods: {
@@ -106,6 +109,9 @@ var app = new Vue({
             if (this.useMtTuanGou) {
               this.zje += Number(this.mttgy)
             }
+            if (this.otherActived) {
+              this.zje += Number(this.otherActivedy)
+            }
             /*复制到剪切板*/
             this.textarea = "店面：" + this.name + "\n"
                 + "日期：" + this.rq + "\n" + this.xingqi + "\n"
@@ -124,6 +130,10 @@ var app = new Vue({
               this.textarea += "美团团购：" + this.mttgd + "单" + this.mttgy + "元" + "\n"
             }
 
+            if (this.otherActived) {
+              this.textarea += "异业活动：" + this.otherActivedd + "单" + this.otherActivedy + "元" + "\n"
+            }
+
             this.textarea += "堂吃：" + this.tc + "\n"
                 + "堂吃占比：" + this.tczb + "\n"
                 + "外带：" + this.wd + "\n"
@@ -138,7 +148,6 @@ var app = new Vue({
                 + "小料：" + this.xl + "\n"
                 + "天气：" + this.tq + "\n"
                 + "生产力：" + this.scl + "\n"
-                + "异业活动：" + this.otherActived + "\n"
 
             this.show = true
 

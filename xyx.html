@@ -108,6 +108,21 @@
             </el-input>
           </el-col>
 
+          <el-col :span="24" class="mt5 mb5">
+            <el-checkbox v-model="otherActived">启用异业活动</el-checkbox>
+          </el-col>
+          <el-col :span="24" v-if="otherActived">
+            <el-input placeholder="0" v-model="otherActivedd" clearable>
+              <template slot="prepend">异业活动</template>
+              <template slot="append">单</template>
+            </el-input>
+          </el-col>
+          <el-col :span="24" v-if="otherActived">
+            <el-input placeholder="0" v-model="otherActivedy" clearable>
+              <template slot="append">元</template>
+            </el-input>
+          </el-col>
+
           <el-col :span="24">
             <el-input placeholder="0" v-model="tc" clearable>
               <template slot="prepend">堂吃</template>
@@ -173,12 +188,6 @@
               <template slot="prepend">天气</template>
             </el-input>
           </el-col>
-
-          <el-col :span="24">
-            <el-input placeholder="0" v-model="otherActived" clearable>
-              <template slot="prepend">异业活动</template>
-            </el-input>
-          </el-col>
         </el-row>
 
         <el-input v-show="false" type="textarea" :rows="2" placeholder="请输入内容" v-model="textarea"></el-input>
@@ -204,6 +213,7 @@
             <li>美团外卖线上支付：{{mtwmxsd}}单{{mtwmxsy}}元</li>
             <li v-if="useElement">饿了么外卖线上支付：{{elmwmxsd}}单{{elmwmxsy}}元</li>
             <li v-if="useMtTuanGou">美团团购：{{mttgd}}单{{mttgy}}元</li>
+            <li v-if="otherActived">异业活动：{{otherActivedd}}单{{otherActivedy}}元</li>
             <li>堂吃：{{tc}}</li>
             <li>堂吃占比：{{tczb}}</li>
             <li>外带：{{wd}}</li>
@@ -218,7 +228,6 @@
             <li>小料：{{xl}}</li>
             <li>天气：{{tq}}</li>
             <li>生产力：{{scl}}</li>
-            <li>异业活动：{{otherActived}}</li>
           </ul>
         </transition>
 
