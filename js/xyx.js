@@ -8,6 +8,8 @@ var app = new Vue({
         wxzf: '1',
         zfb: '1',
         yhk: '1',
+        qywx: '1',
+        qyzfb: '1',
         mtwmxsd: '1',
         mtwmxsy: '1',
         elmwmxsd: '1',
@@ -101,7 +103,7 @@ var app = new Vue({
             this.scl = (this.sjxl / this.gs).toFixed(2);
 
             /*总金额*/
-            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.mtwmxsy)
+            this.zje = Number(this.qxxj) + Number(this.wxzf) + Number(this.zfb) + Number(this.yhk) + Number(this.qywx) + Number(this.qyzfb) + Number(this.mtwmxsy)
 
             if (this.useElement) {
               this.zje += Number(this.elmwmxsy)
@@ -121,6 +123,8 @@ var app = new Vue({
                 + "微信支付：" + this.wxzf + "\n"
                 + "支付宝：" + this.zfb + "\n"
                 + "银行卡：" + this.yhk + "\n"
+                + "区域微信：" + this.qywx + "\n"
+                + "区域支付宝：" + this.qyzfb + "\n"
                 + "美团外卖线上支付：" + this.mtwmxsd + "单" + this.mtwmxsy + "元" + "\n"
 
             if (this.useElement) {
