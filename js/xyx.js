@@ -54,6 +54,9 @@ var app = new Vue({
         }, {
           value: '遂宁万达鲜芋仙',
           label: '遂宁万达鲜芋仙'
+        }, {
+          value: '攀枝花万达鲜芋仙',
+          label: '攀枝花万达鲜芋仙'
         }],
         useElement: false,
         otherActived: false,
